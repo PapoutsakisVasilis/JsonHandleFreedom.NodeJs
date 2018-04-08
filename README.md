@@ -206,3 +206,21 @@ The Decoded Json is Decrypted With PassKey 'password' and Binned to Person Class
 
 
 
+
+
+Example Json Encode Without Bind:
+
+----------------------------------------------------
+
+        var objectNew = decoder.decodeJsonFree(json, 'object', 'password', false, false);
+-----------------------------------------------------------------------------------------------
+        The objectNew Will Be:
+        
+        { name: 'go',
+          jd: [ 1, 2, 3 ],
+          FrStatic: [ { id: 1, name: 'Js', someNumbers: [Object] } ],
+          varia: [ { jsM: [Object] } ],
+          FrPrivate: [ { free: 'go', kAMain: 1 } ] }
+
+----------------------------------------------------
+
